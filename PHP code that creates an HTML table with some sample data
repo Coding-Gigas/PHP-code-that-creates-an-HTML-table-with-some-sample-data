@@ -1,0 +1,19 @@
+<?php
+  $rows = array(
+    array("Name", "Age", "Gender"),
+    array("John", 25, "Male"),
+    array("Jane", 32, "Female"),
+    array("Bob", 47, "Male"),
+    array("Alice", 19, "Female")
+  );
+?>
+
+<table>
+  <?php foreach ($rows as $row): ?>
+    <tr>
+      <?php foreach ($row as $cell): ?>
+        <td><?php echo $cell; ?></td>
+      <?php endforeach; ?>
+    </tr>
+  <?php endforeach; ?>
+</table>
